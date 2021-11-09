@@ -1,3 +1,4 @@
+"use strict";
 const Player = require("./player");
 
 class Ai extends Player{
@@ -12,4 +13,4 @@ class Ai extends Player{
 
 }
 
-module.exports.Ai = Ai;
+module.exports = Ai;
