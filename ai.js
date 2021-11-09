@@ -10,7 +10,7 @@ class Ai extends Player{
     chooseGesture(){
         //Randomly Selects a Gesture from gestureList:
        this.choice = this.gestureList[Math.floor(Math.random() * 5)];
-       console.log(`${this.name} has selected ${this.choice}!`);
+       console.log(`${this.name} selected ${this.choice}!`);
     }
 
 }

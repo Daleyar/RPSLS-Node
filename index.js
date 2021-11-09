@@ -3,4 +3,4 @@ const Player = require("./player");
 
 let startGame = new Game()
 
-startGame.displayRules();
+startGame.runGame();
