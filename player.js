@@ -1,4 +1,4 @@
-class player {
+class Player {
     constructor(name, choice){
         this.name = name;
         this.score = 0;
@@ -16,3 +16,4 @@ class player {
 
 }
 
+module.exports.Player = Player;

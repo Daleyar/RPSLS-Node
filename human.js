@@ -1,4 +1,4 @@
-const player = require("./player");
+const Player = require("./player");
 
 class Human extends player{
     constructor(name, choice){
@@ -6,3 +6,5 @@ class Human extends player{
     }
     
 }
+
+module.exports.Human = Human;

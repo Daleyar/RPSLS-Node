@@ -1,8 +1,8 @@
-const player = require("./player");
+const Player = require("./player");
 
-class AI extends player{
-    constructor(){
-        super(this.name, this.choice);
+class Ai extends player{
+    constructor(name,choice){
+        super(name,choice);
     }
 
     selectGesture(){
@@ -11,4 +11,4 @@ class AI extends player{
 
 }
 
-module.extends.ai = ai;
+module.exports.Ai = Ai;
