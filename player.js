@@ -1,8 +1,8 @@
 class player {
-    constructor(){
-        this.name = " ";
+    constructor(name, choice){
+        this.name = name;
         this.score = 0;
-        this.choice = " ";
+        this.choice = choice;
         this.gestureList = ["rock","paper","scissors","lizard","spock"]
     }
 
