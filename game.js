@@ -29,7 +29,7 @@ class Game {
         console.log("Scissors cuts Paper\nPaper covers Rock\nRock crushes Lizard\nLizard poisons Spock\nSpock smashes Scissors");
         console.log("Scissors decapitates Lizard\nLizard eats Paper\nPaper disproves Spock\nSpock vaporizes Rock\nRock crushes Scissors");
     }
-
+    
     gameStartUp(){
         this.player01.defineName();
 
@@ -84,7 +84,7 @@ class Game {
                 break;
         }
     }
-
+  
     compareGestures(gesture01, gesture02){
         switch(gesture01){
             case "rock":
@@ -100,10 +100,10 @@ class Game {
                 }
                 break;
             case "paper":
-                if(gesture02 == "rock"){
+                if(gesture02 == "rock" || gesture02 == "spock"){
                     this.player1Wins();
                     this.createRound();
-                }else if(gesture02 == "scissors"){
+                }else if(gesture02 == "scissors" || gesture02 == "lizard"){
                     this. player2Wins();
                     this.createRound();
                 }else{
@@ -112,10 +112,10 @@ class Game {
                 }
                 break;
             case "scissors":
-                if(gesture02 == "paper"){
+                if(gesture02 == "paper" || gesture02 == "lizard"){
                     this.player1Wins();
                     this.createRound();
-                }else if(gesture02 == "rock"){
+                }else if(gesture02 == "rock" || gesture02 == "spock"){
                     this. player2Wins();
                     this.createRound();
                 }else{
@@ -124,10 +124,10 @@ class Game {
                 }
                 break;
             case "lizard":
-                if(gesture02 == "spock"){
+                if(gesture02 == "spock" || gesture02 == "paper"){
                     this.player1Wins();
                     this.createRound();
-                }else if(gesture02 == "rock"){
+                }else if(gesture02 == "rock" || gesture02 == "scissors"){
                     this. player2Wins();
                     this.createRound();
                 }else{
@@ -136,10 +136,10 @@ class Game {
                 }
                 break;
             case "spock":
-                if(gesture02 == "rock"){
+                if(gesture02 == "rock" || gesture02 == "scissors"){
                     this.player1Wins();
                     this.createRound();
-                }else if(gesture02 == "lizard"){
+                }else if(gesture02 == "lizard" || gesture02 == "paper"){
                     this. player2Wins();
                     this.createRound();
                 }else{
