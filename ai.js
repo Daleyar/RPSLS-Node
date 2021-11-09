@@ -6,7 +6,7 @@ class AI extends player{
     }
 
     selectGesture(){
-        let randomNum = Math.floor(Math.random() * );
+       
     }
 
 }
