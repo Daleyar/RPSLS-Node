@@ -2,10 +2,10 @@
 const prompt = require("prompt-sync")();
 
 class Player {
-    constructor(name, choice){
-        this.name = name;
+    constructor(){
+        this.name = " ";
         this.score = 0;
-        this.choice = choice;
+        this.choice = " ";
         this.gestureList = ["rock","paper","scissors","lizard","spock"]
     }
 
@@ -24,8 +24,8 @@ class Player {
     }
 
     defineName(){
-        console.log("What is your name? ")
-        this.name = prompt("")
+        this.name = prompt("Enter your name. ")
+        console.log(`Your name is ${this.name[0].toUpperCase() + this.name.substring(1)}. `)
     }
 }
 

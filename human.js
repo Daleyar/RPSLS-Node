@@ -2,8 +2,8 @@
 const Player = require("./player");
 
 class Human extends Player{
-    constructor(name, choice){
-        super(name, choice);
+    constructor(){
+        super();
     }
 }
 

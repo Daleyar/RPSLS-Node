@@ -1,6 +1,8 @@
-"use strict";
-const Human = require("./human");
+const Game = require("./game");
 const Player = require("./player");
 
-let player1 = new Human()
-player1.chooseGesture();
+//let startGame = new Game()
+let test = new Player()
+
+//startGame.runGame();
+test.defineName();
